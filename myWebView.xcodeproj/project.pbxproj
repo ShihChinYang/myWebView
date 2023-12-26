@@ -19,7 +19,7 @@
 		D52517632B356F8900C1D9B9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D52517622B356F8900C1D9B9 /* libz.tbd */; };
 		D52517662B35732500C1D9B9 /* GCDWebServer in Frameworks */ = {isa = PBXBuildFile; productRef = D52517652B35732500C1D9B9 /* GCDWebServer */; };
 		D525176B2B3582EB00C1D9B9 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = D525176A2B3582EB00C1D9B9 /* dist */; };
-		D5A4DF112B3666EF009E6934 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D5A4DF102B3666EF009E6934 /* out */; };
+		D57E21112B3AA87400634297 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D57E21102B3AA87400634297 /* out */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		D525174F2B35669900C1D9B9 /* myWebViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myWebViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D52517622B356F8900C1D9B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D525176A2B3582EB00C1D9B9 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
-		D5A4DF102B3666EF009E6934 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
+		D57E21102B3AA87400634297 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				D52517352B35669900C1D9B9 /* Assets.xcassets */,
 				D52517372B35669900C1D9B9 /* LaunchScreen.storyboard */,
 				D525173A2B35669900C1D9B9 /* Info.plist */,
-				D5A4DF102B3666EF009E6934 /* out */,
+				D57E21102B3AA87400634297 /* out */,
 			);
 			path = myWebView;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			files = (
 				D525176B2B3582EB00C1D9B9 /* dist in Resources */,
 				D52517392B35669900C1D9B9 /* LaunchScreen.storyboard in Resources */,
-				D5A4DF112B3666EF009E6934 /* out in Resources */,
+				D57E21112B3AA87400634297 /* out in Resources */,
 				D52517362B35669900C1D9B9 /* Assets.xcassets in Resources */,
 				D52517342B35669700C1D9B9 /* Main.storyboard in Resources */,
 			);

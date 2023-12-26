@@ -1287,7 +1287,7 @@ const { getEditorConfigHook, getEditorConfig } = require('./bsafesAPIHooks');
         if (editor.events.trigger('video.beforeUpload', [videos]) === false) {
           return false;
         }
-
+        alert('Upload ...')
         const chunkSize = getEditorConfig().videoChunkSize;
         const video = videos[0];
 				const fileType = video.type;
