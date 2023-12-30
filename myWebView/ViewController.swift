@@ -38,5 +38,19 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         })
         present(ac, animated: true)
     }
+    
+    func webView(_ webView: WKWebView,
+        runJavaScriptConfirmPanelWithMessage message: String,
+        initiatedByFrame frame: WKFrameInfo,
+        completionHandler: @escaping (Bool) -> Void) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+                completionHandler(true)
+            }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+                completionHandler(false)
+            }))
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
