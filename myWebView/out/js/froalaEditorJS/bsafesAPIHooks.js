@@ -1,5 +1,5 @@
 window.bsafesFroala ={
-    name: "abc",
+    name: "bsafesFroala",
 }
 
 export function bSafesPreflight(fn) {
@@ -56,4 +56,8 @@ export function arraryBufferToStr(arrayBuffer) {
 
 export function getEditorConfig() {
     return window.bsafesFroala.getEditorConfig();
+}
+
+export function bsafesNativeToWebCall() {
+    return window.bsafesNative.bsafesNativeToWebCall();
 }

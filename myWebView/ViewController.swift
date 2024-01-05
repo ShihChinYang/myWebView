@@ -7,8 +7,20 @@
 
 import UIKit
 import WebKit
-class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
+    
     var webView: WKWebView!
+    var timer: Timer!
+    var appLoaded: Bool = false
+    
+    @objc func fireTimer() {
+        print("Timer fired!")
+        if appLoaded == false {
+            webView?.reload();
+        } else {
+            timer.invalidate();
+        }
+    }
     
     override func loadView() {
         let webViewConfiguration = WKWebViewConfiguration();
@@ -16,8 +28,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
         webView.navigationDelegate = self
         webView.uiDelegate = self
-        webView.isInspectable = true
+        //webView.isInspectable = true
+        let contentController = webView.configuration.userContentController
+        contentController.add(self, name: "toggleMessageHandler")
         view = webView
+        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
     override func viewDidLoad() {
@@ -26,6 +41,26 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let url = URL(string: "http://localhost:3000")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
+        
+        //webView.reload();
+        
+    }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard let dict = message.body as? [String : AnyObject] else {
+            return
+        }
+        appLoaded = true
+        print(dict)
+        let script = "window.bsafesNative.bsafesNativeToWebCall();"
+
+        webView.evaluateJavaScript(script) { (result, error) in
+            if let result = result {
+                print("Label is updated with message: \(result)")
+            } else if let error = error {
+                print("An error occurred: \(error)")
+            }
+        }
     }
     
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {

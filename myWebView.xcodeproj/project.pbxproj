@@ -19,7 +19,7 @@
 		D52517632B356F8900C1D9B9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D52517622B356F8900C1D9B9 /* libz.tbd */; };
 		D52517662B35732500C1D9B9 /* GCDWebServer in Frameworks */ = {isa = PBXBuildFile; productRef = D52517652B35732500C1D9B9 /* GCDWebServer */; };
 		D525176B2B3582EB00C1D9B9 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = D525176A2B3582EB00C1D9B9 /* dist */; };
-		D5E113232B3FABA700EC1B29 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D5E113222B3FABA700EC1B29 /* out */; };
+		D59CC8412B48315C0023A9A0 /* out in Resources */ = {isa = PBXBuildFile; fileRef = D59CC8402B48315C0023A9A0 /* out */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		D525174F2B35669900C1D9B9 /* myWebViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myWebViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D52517622B356F8900C1D9B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D525176A2B3582EB00C1D9B9 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
-		D5E113222B3FABA700EC1B29 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; path = out; sourceTree = "<group>"; };
+		D59CC8402B48315C0023A9A0 /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; name = out; path = ../../../BSafesV2/BSafes_Frontend_Next/out; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				D52517352B35669900C1D9B9 /* Assets.xcassets */,
 				D52517372B35669900C1D9B9 /* LaunchScreen.storyboard */,
 				D525173A2B35669900C1D9B9 /* Info.plist */,
-				D5E113222B3FABA700EC1B29 /* out */,
+				D59CC8402B48315C0023A9A0 /* out */,
 			);
 			path = myWebView;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			files = (
 				D525176B2B3582EB00C1D9B9 /* dist in Resources */,
 				D52517392B35669900C1D9B9 /* LaunchScreen.storyboard in Resources */,
-				D5E113232B3FABA700EC1B29 /* out in Resources */,
+				D59CC8412B48315C0023A9A0 /* out in Resources */,
 				D52517362B35669900C1D9B9 /* Assets.xcassets in Resources */,
 				D52517342B35669700C1D9B9 /* Main.storyboard in Resources */,
 			);
@@ -472,6 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23AZL7GD52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myWebView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.8;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23AZL7GD52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myWebView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,6 +509,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.8;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
